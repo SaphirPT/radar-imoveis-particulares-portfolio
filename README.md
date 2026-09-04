@@ -7,16 +7,13 @@
 
 Plataforma de apoio à **angariação imobiliária**, criada para pesquisar anúncios públicos, identificar potenciais proprietários particulares, reduzir duplicados e organizar novas oportunidades de contacto na região de Viseu, Mangualde e concelhos próximos.
 
-> Repositório público de apresentação. Código-fonte, base de dados, regras internas, contactos e dados recolhidos permanecem privados.
+> Este é um repositório público de apresentação. Código-fonte, base de dados, regras internas, contactos e dados recolhidos permanecem privados.
 
-## Visão geral visual
-
-<img width="1400" height="974" alt="clipboard" src="https://github.com/user-attachments/assets/5c13da1a-cbc1-4bd1-9897-195af4b71c7d" />
-
+![Visão geral atual do Radar Imóveis](https://github.com/user-attachments/assets/d38eb5eb-751c-4d20-b515-9b9b1bfd5ddc)
 
 ## Objetivo
 
-Centralizar pesquisas manuais em várias fontes, filtrar anúncios, comparar oportunidades, validar o tipo de anunciante e guardar apenas resultados relevantes.
+Centralizar um processo que normalmente exige várias pesquisas manuais: consultar diferentes fontes, filtrar anúncios, comparar oportunidades, validar o tipo de anunciante e guardar apenas os resultados relevantes para acompanhamento comercial.
 
 O sistema está preparado para **pesquisas recorrentes e geração diária de novas oportunidades**, sempre condicionadas à disponibilidade, às regras de acesso e ao conteúdo público de cada fonte. Não promete uma quantidade artificial ou garantida de leads.
 
@@ -24,36 +21,56 @@ O sistema está preparado para **pesquisas recorrentes e geração diária de no
 
 - Pesquisa multifuente em portais imobiliários e classificados públicos.
 - Filtros por concelho, localidade, tipo de imóvel, negócio, preço, área e período.
-- Classificação assistida: particular, outra imobiliária ou por validar.
-- Pontuação com evidências e nível de confiança.
-- Deduplicação por fonte e identificador externo.
-- Histórico, oportunidades guardadas, alertas e estado das fontes.
-- Mapas e Street View quando existe localização compatível.
+- Classificação assistida do anunciante: particular, outra imobiliária ou por validar.
+- Pontuação de oportunidade com evidências e nível de confiança visíveis.
+- Deduplicação por fonte e identificador externo para evitar trabalho repetido.
+- Registo de pesquisas, oportunidades guardadas, alertas e estado das fontes.
+- Integração com mapa e Street View quando existe localização compatível.
 - Importação assistida por ligação pública, texto ou ficheiro autorizado.
-- Extração apenas de telefone/e-mail escritos publicamente no anúncio.
+- Extração apenas de telefone ou e-mail que estejam escritos publicamente no anúncio.
+- Visão operacional com novas oportunidades, itens guardados e acompanhamento.
 
 ## Fluxo funcional
 
 **Pesquisa pública → normalização → deduplicação → classificação → pontuação → validação humana → oportunidade guardada**
 
-## Recolha responsável
+O objetivo é apoiar a decisão comercial com rastreabilidade. A classificação não é apresentada como certeza absoluta: o sistema mostra a evidência disponível e permite validação humana.
 
-O MVP integra pesquisa sob demanda em OLX, CustoJusto, CASA SAPO e Imovirtual. Fontes restritas usam fluxo assistido. Facebook e Instagram só via APIs oficiais e acessos autorizados.
+## Fontes e recolha responsável
 
-O projeto não contorna autenticação, CAPTCHA, botões de revelação de contacto nem mecanismos de proteção.
+O MVP integra pesquisa pública sob demanda em fontes como **OLX, CustoJusto, CASA SAPO e Imovirtual**. Fontes com restrições técnicas utilizam fluxo assistido. Facebook e Instagram só são considerados através das APIs oficiais e de contas/tokens autorizados.
+
+O projeto não contorna autenticação, CAPTCHA, botões de revelação de contacto nem mecanismos de proteção das plataformas. Cada integração respeita o modo de acesso disponível e pode permanecer inativa quando não existe autorização adequada.
 
 ## Tecnologias
 
 **React 19 · TypeScript · Vite · Python 3.12+ · FastAPI · Pydantic · SQLite · APIs REST · Vitest · pytest**
 
+## Evidência visual atualizada
+
+### Visão geral operacional do MVP
+
+![Visão geral atualizada do Radar Imóveis](https://github.com/user-attachments/assets/d38eb5eb-751c-4d20-b515-9b9b1bfd5ddc)
+
+A captura foi obtida diretamente da versão atual do sistema e apresenta apenas indicadores agregados da operação. Nenhum contacto, proprietário ou registo individual é exposto.
+
+## Valor para a operação imobiliária
+
+- Menos tempo disperso entre várias plataformas.
+- Priorização das oportunidades com maior aderência aos critérios definidos.
+- Histórico de pesquisas e redução de anúncios duplicados.
+- Processo mais consistente para prospecção e angariação.
+- Base preparada para execução recorrente e expansão controlada de fontes.
+
 ## Estado
 
-**MVP funcional validado localmente em pesquisas multifuente reais.**
+**MVP funcional validado localmente em pesquisas multifuente reais.** A evolução concentra-se em robustez das integrações, qualidade de classificação, observabilidade e conformidade operacional.
 
 ## Privacidade e propriedade intelectual
 
-- Código-fonte e base de dados não são disponibilizados.
+- O código-fonte e a base de dados não são disponibilizados neste repositório.
 - Não existem listas de contactos, dados pessoais, credenciais, tokens ou automações completas para download.
+- As imagens destinam-se exclusivamente à demonstração profissional do projeto.
 - Todos os direitos sobre os componentes originais e o material de apresentação são reservados.
 
 ## Autor
