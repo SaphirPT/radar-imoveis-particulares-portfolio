@@ -9,7 +9,7 @@ Plataforma de apoio à **angariação imobiliária**, criada para pesquisar anú
 
 > Este é um repositório público de apresentação. Código-fonte, base de dados, regras internas, contactos e dados recolhidos permanecem privados.
 
-![Visão geral atual do Radar Imóveis](https://github.com/user-attachments/assets/d38eb5eb-751c-4d20-b515-9b9b1bfd5ddc)
+![Pesquisa operacional do Radar Imóveis com dados sensíveis desfocados](https://github.com/user-attachments/assets/caf4f802-794f-482b-8e97-9495776961ff)
 
 ## Objetivo
 
@@ -46,13 +46,19 @@ O projeto não contorna autenticação, CAPTCHA, botões de revelação de conta
 
 **React 19 · TypeScript · Vite · Python 3.12+ · FastAPI · Pydantic · SQLite · APIs REST · Vitest · pytest**
 
-## Evidência visual atualizada
+## Evidência visual operacional
 
-### Visão geral operacional do MVP
+### Pesquisa, filtros e fontes
 
-![Visão geral atualizada do Radar Imóveis](https://github.com/user-attachments/assets/d38eb5eb-751c-4d20-b515-9b9b1bfd5ddc)
+![Filtros, fontes e classificação do Radar Imóveis](https://github.com/user-attachments/assets/caf4f802-794f-482b-8e97-9495776961ff)
 
-A captura foi obtida diretamente da versão atual do sistema e apresenta apenas indicadores agregados da operação. Nenhum contacto, proprietário ou registo individual é exposto.
+A captura foi obtida diretamente da versão operacional atual. Filtros, fontes, classificação, pontuação e fluxo permanecem visíveis; dados identificáveis dos anúncios foram intencionalmente desfocados.
+
+### Resultados, mapa e detalhe da oportunidade
+
+![Resultados reais, mapa e critérios do Radar Imóveis](https://github.com/user-attachments/assets/6d17f43c-2623-4ea0-bdda-03349c2aa8c5)
+
+A interface demonstra resultados preenchidos, integração cartográfica e critérios de correspondência sem expor nomes, contactos, moradas, preços ou outros dados específicos dos anúncios.
 
 ## Valor para a operação imobiliária
 
